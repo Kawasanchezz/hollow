@@ -1,0 +1,85 @@
+.menu-contato {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    z-index: 501;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    color: #3d2b1a;
+    background-color: #d39e6a;
+    border: 28px solid #976b3f;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.menu-contato h2 {
+    font-size: 2rem;
+}
+
+.descricao {
+    max-width: 500px;
+    font-size: 1rem;
+}
+
+.lista-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.item-contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #6b4e30;
+    color: #d39e6a;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.item-contato:hover {
+    background-color: #8b6a46;
+    transform: scale(1.05);
+}
+
+.buttonClose {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    width: 50px;
+    height: 50px;
+    background-color: #6b4e30;
+    border: none;
+    border-radius: 30px;
+    color: #d39e6a;
+    font-size: 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttonClose:hover {
+    background-color: #8b6a46;
+}
+
+@media (max-width: 768px) {
+    .menu-contato {
+        border: 15px solid #976b3f;
+        height: auto;
+        padding: 30px 20px;
+    }
+}

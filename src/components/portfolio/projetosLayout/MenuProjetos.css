@@ -1,0 +1,237 @@
+.menu-projetos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    z-index: 501;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #7a4d20;
+    background-color: #d39e6a;
+    border: 28px solid #976b3f;
+    border-radius: 40px;
+
+    .buttonClose {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+
+        width: 50px;
+        height: 50px;
+        background-color: #6b4e30;
+        border: none;
+        border-radius: 30px;
+        color: #d39e6a;
+        font-size: 30px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .buttonClose:hover {
+        background-color: #8b6a46;
+    }
+
+    .box-projetos {
+        height: 85%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        border-radius: 16px;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #bb8a59;
+    }
+}
+
+.card-projetos {
+    padding: 10px;
+    height: 170px;
+    border-radius: 8px;
+    background-color: #6b4e30;
+    text-decoration: none;
+    color: #d39e6a;
+    display: flex;
+    flex-direction: column;
+    align-items: cneter;
+    gap: 5px;
+    width: 220px;
+    transition: all 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card-projetos:hover {
+    transform: scale(1.05);
+}
+
+.card-projetos img {
+    width: 200px;
+    border-radius: 8px;
+}
+
+.box-projetos::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.box-projetos::-webkit-scrollbar-track {
+    background: #8b6a46;
+    border-radius: 10px;
+}
+
+.box-projetos::-webkit-scrollbar-thumb {
+    background: #d39e6a;
+    border-radius: 10px;
+    border: 2px solid #6d5337;
+}
+
+.box-projetos::-webkit-scrollbar-thumb:hover {
+    background: #b58656;
+}
+
+.container-detalhes {
+    width: 95%;
+    height: 100%;
+    background-color: #d39e6a;
+    border-radius: 20px;
+    padding: 20px;
+    color: #3d2b1a;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-detalhes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #6b4e30;
+    padding-bottom: 10px;
+}
+
+.btn-voltar {
+    text-decoration: none;
+    background-color: #6b4e30;
+    color: #d39e6a;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #3d2b1a;
+}
+
+.conteudo-projeto {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.conteudo-projeto::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.conteudo-projeto::-webkit-scrollbar-track {
+    background: #8b6a46;
+    border-radius: 10px;
+}
+
+.conteudo-projeto::-webkit-scrollbar-thumb {
+    background: #d39e6a;
+    border-radius: 10px;
+    border: 2px solid #6d5337;
+}
+
+.conteudo-projeto::-webkit-scrollbar-thumb:hover {
+    background: #b58656;
+}
+
+.projeto-imagem-grande img {
+    width: 250px;
+    max-width: 500px;
+    border-radius: 16px;
+    border: 6px solid #6b4e30;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.projeto-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 250px;
+}
+
+.projeto-info p {
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.tecnologias {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tecnologias span {
+    background-color: #6b4e30;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.acoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-demo,
+.btn-github {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-demo {
+    background-color: #3d2b1a;
+    color: #fff;
+}
+
+.btn-demo:hover {
+    background-color: #6b4e30;
+}
+
+.btn-github {
+    background-color: transparent;
+    border: 2px solid #3d2b1a;
+    color: #3d2b1a;
+}
+
+.btn-github:hover {
+    background-color: #3d2b1a;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu-projetos {
+        border: 15px solid #976b3f;
+    }
+}
