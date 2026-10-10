@@ -126,7 +126,7 @@ export function Player() {
     <RigidBody name="player" gravityScale={2.5} ref={rb} colliders={false} position={[0, 1, 0]} linearDamping={0.5} angularDamping={0.5} enabledRotations={[false, false, false]}>
       <PerspectiveCamera makeDefault position={valueCamera} rotation={[-0.3, 0, 0]} ref={cameraRef} fov={window.innerWidth < 768 ? 70 : 30} />
       <CapsuleCollider args={[0.4, 0.2]} position={[0, 0.6, 0]} />
-      <Text fontSize={0.2} position={[0, 1.3, 0]}>Kawã</Text>
+      <Text font="/fonts/Roboto-Regular.woff" fontSize={0.2} position={[0, 1.3, 0]}>Kawã</Text>
       <group ref={character} rotation={[0, - Math.PI / 2, 0]} >
         <Avatar scale={1.1} animation={animation} />
       </group>
