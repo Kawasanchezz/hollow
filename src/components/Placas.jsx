@@ -7,7 +7,7 @@ export function Placas() {
         <>
             <RigidBody type='fixed' colliders="cuboid" scale={0.6} position={[-3.5, -0.3, 1.5]}>
                 <Float speed={2} rotationIntensity={0.2} floatIntensity={0.5} floatingRange={[1, 1.1]}>
-                    <Text font="/fonts/Roboto-Bold.ttf" fontSize={window.innerWidth < 768 ? 1 : 0.7} fontWeight="bold" position={[-4.5, 2.7, -7]}>Sobre Mim</Text>
+                    <Text font="/fonts/Roboto-Regular.woff" outlineWidth="3%" outlineColor="#ffffff" fontSize={window.innerWidth < 768 ? 1 : 0.7} fontWeight="bold" position={[-4.5, 2.7, -7]}>Sobre Mim</Text>
                 </Float>
 
                 <Placa />
@@ -15,7 +15,7 @@ export function Placas() {
 
             <RigidBody type='fixed' colliders="cuboid" scale={0.6} position={[3.5, -0.3, 3]} rotation={[0, - Math.PI / 4, 0]}>
                 <Float speed={2} rotationIntensity={0.2} floatIntensity={0.5} floatingRange={[1, 1.1]}>
-                    <Text font="/fonts/Roboto-Bold.ttf" fontSize={window.innerWidth < 768 ? 1 : 0.7} fontWeight="bold" position={[-4.5, 2.7, -7]} rotation={[0, Math.PI / 4, 0]}>Projetos</Text>
+                    <Text font="/fonts/Roboto-Regular.woff" outlineWidth="3%" outlineColor="#ffffff" fontSize={window.innerWidth < 768 ? 1 : 0.7} fontWeight="bold" position={[-4.5, 2.7, -7]} rotation={[0, Math.PI / 4, 0]}>Projetos</Text>
                 </Float>
 
                 <Placa />
@@ -23,7 +23,7 @@ export function Placas() {
 
             <RigidBody type='fixed' colliders="cuboid" scale={0.6} position={[1, -0.3, 11.4]} rotation={[0, - Math.PI / 4, 0]}>
                 <Float speed={2} rotationIntensity={0.2} floatIntensity={0.5} floatingRange={[1, 1.1]}>
-                    <Text font="/fonts/Roboto-Bold.ttf" fontSize={0.5} fontWeight="bold" position={[-4.5, 2.5, -7]} rotation={[0, Math.PI / 4, 0]}>Contato</Text>
+                    <Text font="/fonts/Roboto-Regular.woff" outlineWidth="3%" outlineColor="#ffffff" fontSize={0.5} fontWeight="bold" position={[-4.5, 2.5, -7]} rotation={[0, Math.PI / 4, 0]}>Contato</Text>
                 </Float>
 
                 <Placa />
