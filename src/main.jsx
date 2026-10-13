@@ -1,3 +1,4 @@
+import './silenciaAvisos'
 import './setupDraco'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
